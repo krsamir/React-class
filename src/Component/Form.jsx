@@ -11,7 +11,6 @@ export default function Form() {
   const handleChange = (e) => {
     const stateValues = { ...data };
     stateValues[e.target.name] = e.target.value;
-    console.log(stateValues);
     setData(stateValues);
   };
   // object destructuring
