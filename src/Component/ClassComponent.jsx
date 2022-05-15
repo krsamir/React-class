@@ -3,7 +3,7 @@ const log = console.log;
 export default class ClassComponent extends Component {
   constructor() {
     super();
-    log(1);
+    // log(1);
     this.state = { name: "", age: 0 };
     // this.handleClick = this.handleClick.bind(this);
   }

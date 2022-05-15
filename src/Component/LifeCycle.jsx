@@ -5,7 +5,7 @@ export default function LifeCycle() {
   const [data, setData] = useState("Render");
   const [data1, setData1] = useState("Render");
   useEffect(() => {
-    log(1);
+    log("Component Did Mount");
     // return () => {
     // componentDidMount
     //   log("unmount");
@@ -15,7 +15,10 @@ export default function LifeCycle() {
   // Useffect is dependent on the variables passed into this array.
   // If the passed values are changing, so simply treat
   //  useEffect as componentDidUpdate
-  log(2);
+  // useEffect(() => {
+  //   log("Component Did Update");
+  // }, [data1]);
+  log("Render");
   return (
     <div>
       <button className="btn btn-primary" onClick={() => setData("Rendered")}>

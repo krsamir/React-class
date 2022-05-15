@@ -29,8 +29,8 @@ export default function Covid() {
   return (
     <div>
       {data.map((value, index) => {
-        console.log(value);
-        return <div key={index}></div>;
+        console.log();
+        return <div key={index}>{value[index][0]}</div>;
       })}
     </div>
   );
