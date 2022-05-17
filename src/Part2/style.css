@@ -42,3 +42,54 @@ strike{
 /* #dcf0ef
 #43b049
 #4cd47c */
+
+.todo_top{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.todo_input{
+    margin-right: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #4cd47c;
+    padding: 0px 5px;
+    font-size: 18px;
+}
+
+.task_manager{
+    margin: 45px 0px 0px 50px;
+}   
+.tasks_parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tasks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.singleTask{
+    background-color: #4cd47c;
+    margin: 5px;
+    padding: 6px;
+    border-radius: 6px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.markbtn{
+    padding: 0px 10px;
+    height: 40px;
+    background-color: #43b049;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: #fff;
+}

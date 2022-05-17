@@ -1,5 +1,6 @@
 import "./App.css";
-import Product from "./Part2/Product";
+import Todo from "./Part2/Todo";
+// import Product from "./Part2/Product";
 // import Form from "./Component/Form";
 // import Form1 from "./Component/Form1";
 // import Todo from "./Component/Todo";
@@ -12,7 +13,8 @@ function App() {
   // const name = "samir";
   return (
     <div>
-      <Product />
+      <Todo />
+      {/* <Product /> */}
       {/* props */}
       {/* <Demo data={name} /> */}
       {/* <ClassComponent /> */}
