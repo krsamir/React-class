@@ -1,6 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 function Todo() {
+  useEffect(() => {
+    const value = window.localStorage.getItem("data");
+    if (value) {
+      setTask(JSON.parse(value));
+    } else {
+      setTask([]);
+    }
+  }, []);
+
   const [task, setTask] = useState([]);
   const [data, setData] = useState("");
 
@@ -22,6 +31,9 @@ function Todo() {
     arr.splice(index, 1);
     setTask(arr);
   };
+  const saveUpdateData = () => {
+    window.localStorage.setItem("data", JSON.stringify(task));
+  };
   return (
     <div>
       <div className="todo_top">
@@ -34,6 +46,13 @@ function Todo() {
         />
         <button onClick={addTask} className="btn btn-primary">
           + Add Task
+        </button>
+        <button
+          onClick={() => saveUpdateData()}
+          className="btn btn-primary"
+          style={{ marginLeft: "10px" }}
+        >
+          + Save/Update My Data
         </button>
       </div>
       <div className="task_manager">
